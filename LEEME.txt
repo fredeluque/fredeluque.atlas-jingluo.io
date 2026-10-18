@@ -1,0 +1,29 @@
+ATLAS JINGLUO · versión web independiente
+=========================================
+
+Esta carpeta es la app completa. Funciona en cualquier alojamiento de
+páginas estáticas, sin servidor ni base de datos, y se puede instalar en el
+móvil como una app (con funcionamiento sin conexión).
+
+Contenido
+- index.html .............. la aplicación (todo en un archivo)
+- manifest.webmanifest .... datos para instalarla como app
+- sw.js ................... permite usarla sin conexión
+- icon-*.png, apple-touch-icon.png ... iconos
+
+Cómo publicarla gratis (elige una opción)
+1) Netlify Drop: entra en app.netlify.com/drop y arrastra esta carpeta.
+   Te da un enlace https al momento (puedes cambiarle el nombre).
+2) GitHub Pages: crea un repositorio, sube estos archivos y activa Pages
+   en Settings → Pages (rama main, carpeta raíz).
+3) Cloudflare Pages: Workers & Pages → Create → Pages → Upload assets.
+
+Instalarla en el móvil
+- Android (Chrome): abre el enlace → menú ⋮ → «Instalar app» o «Añadir a pantalla de inicio».
+- iPhone (Safari): abre el enlace → botón Compartir → «Añadir a pantalla de inicio».
+
+Datos personales
+Favoritos, notas y progreso se guardan en el navegador de cada dispositivo
+(no se sincronizan entre dispositivos en esta versión).
+
+Para actualizar: sustituye index.html por la versión nueva y vuelve a subir.
